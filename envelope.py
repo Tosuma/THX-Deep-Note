@@ -17,5 +17,5 @@ class Envelope:
             return env
         return fn
 
-    def flat(duration):
+    def flat():
         return lambda t: np.ones_like(t)

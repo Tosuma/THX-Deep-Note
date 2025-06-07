@@ -8,5 +8,5 @@ actually supposed to sound like.
 
 ## Installation
 
-To run the simulation it is required to install the `numpy` and `wave`
+To run the simulation it is required to install the `numpy`, `scipy` and `wave`
 libraries. Run `pip install -r requirements.txt` to get required libraries.

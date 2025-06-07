@@ -4,7 +4,11 @@ class VoiceSegment:
                  pan_from=0.0, pan_to=0.0, pan_shape='linear',
                  envelope=None,
                  detune_cents=0.0,
-                 osc_shape_param=None):
+                 osc_shape_param=None,
+                 osc_blend=None,
+                 filter_type=None,
+                 filter_cutoff=None,
+                 filter_resonance=0.707):  # Q=0.707 is butterworth
         self.start_time = start_time
         self.duration = duration
         self.freq = freq
@@ -17,3 +21,7 @@ class VoiceSegment:
         self.envelope = envelope
         self.detune_cents = detune_cents
         self.osc_shape_param = osc_shape_param
+        self.osc_blend = osc_blend
+        self.filter_type = filter_type
+        self.filter_cutoff = filter_cutoff
+        self.filter_resonance = filter_resonance
